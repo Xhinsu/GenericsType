@@ -10,4 +10,11 @@ public class Box<T> {
     public void setStoredValue(T storedValue){
         this.storedValue = storedValue;
     }
+
+    public T castValue(T Box){
+        T temp = Box;
+        return temp;
+
+    }
+
 }

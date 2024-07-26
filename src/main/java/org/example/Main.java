@@ -4,7 +4,11 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
+        Box<Integer> integerBox = integerBox.getStoredValue();
+        Box<String> stringBox = new Box<>();
+        integerBox.castValue(1);
+        stringBox.castValue("3");
+        stringBox.castValue(1);
 
     }
 }
