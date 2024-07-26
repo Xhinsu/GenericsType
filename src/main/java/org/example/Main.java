@@ -5,9 +5,10 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        Box<String> stringBox = new Box<>();
+        Box<String> stringBox = new Box<>("Hey");
+        Box<String> stringBox2 = new Box<>("Hey");
 
-        System.out.println(stringBox.castValue("Hey"));
+        System.out.println(stringBox.hasSameName(stringBox2));
 
 
     }
