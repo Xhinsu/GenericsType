@@ -11,10 +11,9 @@ public class Box<T> {
         this.storedValue = storedValue;
     }
 
-    public T castValue(T Box){
-        T temp = Box;
-        return temp;
+    public <U> T castValue(U Box){
 
+        return (T) Box;
     }
 
 }
